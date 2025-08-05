@@ -26,4 +26,44 @@ A simple and modular restaurant management system built using Java and Object-Or
 ---
 
 ## 📂 Project Structure
+restaurant/
+├── Main.java
+├── models/
+│ ├── User.java (abstract)
+│ ├── Customer.java
+│ ├── Chef.java
+│ ├── DeliveryGuy.java
+│ ├── Dish.java
+│ └── Order.java
+├── services/
+│ ├── interfaces/
+│ │ ├── CustomerService.java
+│ │ ├── ChefService.java
+│ │ └── DeliveryService.java
+│ └── implementations/
+│ ├── CustomerServiceImpl.java
+│ ├── ChefServiceImpl.java
+│ └── DeliveryServiceImpl.java
+├── data/
+│ ├── UserData.java
+│ ├── DishData.java
+│ └── OrderData.java
+
+🎯 Use Case Scenarios
+A customer registers and logs in
+Views available dishes
+Places an order
+Chef views new orders and updates status
+Delivery guy checks and delivers orders
+
+🚀 Future Improvements
+Replace CLI with GUI (JavaFX or Swing)
+Add file/database persistence
+Implement role-based authentication
+Add unit testing
+
+
+
+
+
 
